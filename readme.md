@@ -47,3 +47,7 @@ Result
 Dog, Chicken
 ````
 
+## How it works
+1. Convert infix notation to postfix notation in a stack with Shunting-yard algorithm
+2. use the stack we have now produced and execute each op recursively to generate an AST  
+3. loop thru our entity list and each if each one matches our tree structure
