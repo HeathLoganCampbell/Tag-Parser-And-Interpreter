@@ -1,7 +1,6 @@
 package dev.cobblesword.tags.logic;
 
 import dev.cobblesword.tags.Taggable;
-import dev.cobblesword.tags.dummy.Animal;
 import dev.cobblesword.tags.node.Node;
 
 import java.util.List;

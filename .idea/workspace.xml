@@ -38,23 +38,93 @@
       <recent name="dev.cobblesword.tags.node.op" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Main" />
+  <component name="RunManager" selected="JUnit.Tests.or3Selector">
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TagSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.logic.*" />
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.and3Selector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
+      <option name="METHOD_NAME" value="and3Selector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.andSelectorNoMatchFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
+      <option name="METHOD_NAME" value="andSelectorNoMatchFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.or3Selector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
+      <option name="METHOD_NAME" value="or3Selector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.orSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
+      <option name="METHOD_NAME" value="orSelector" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Tests.or3Selector" />
+        <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.and3Selector" />
+        <item itemvalue="JUnit.Tests.andSelectorNoMatchFound" />
+        <item itemvalue="JUnit.Tests.orSelector" />
       </list>
     </recent_temporary>
   </component>
