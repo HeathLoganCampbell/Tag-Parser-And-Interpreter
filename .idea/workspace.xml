@@ -30,6 +30,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dev.cobblesword.tags" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dev.cobblesword.tags.entities" />
       <recent name="dev.cobblesword.tags.node.op" />
@@ -41,7 +44,7 @@
       <module name="TagSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="PATTERN" value="dev.cobblesword.tags.logic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,21 +68,5 @@
       <updated>1643515558203</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/cobblesword/tags/Main.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/cobblesword/tags/Main.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
