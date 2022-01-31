@@ -2,6 +2,7 @@ package dev.cobblesword.tags;
 
 import dev.cobblesword.tags.dummy.Animal;
 import dev.cobblesword.tags.logic.Evaluator;
+import dev.cobblesword.tags.node.Node;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,9 +54,17 @@ public class Main
         dog.addTag("pet");
         animals.add(dog);
 
-        List<Taggable> filteredAnimals = Evaluator.evaluate("(4legs | 2legs)", animals);
+        long start = System.currentTimeMillis();
+        Node node = Evaluator.precompileSelector("(4legs | 2legs)");
+        int sum = 1;
+        for(int i = 0 ; i < 1_000_000; i++)
+        {
+            List<Taggable> filteredAnimals = Evaluator.evaluateWithPrecompiledDataStructure(node, animals);
+            sum += filteredAnimals.size();
+        }
+
 
         // 2
-        System.out.println(filteredAnimals.size());
+        System.out.println(sum + " " + (System.currentTimeMillis() - start));
     }
 }

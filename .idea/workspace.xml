@@ -28,6 +28,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -38,7 +41,62 @@
       <recent name="dev.cobblesword.tags.node.op" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IdentifierTests.singleSelector">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Main" />
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralTests and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="dev.cobblesword.tags.GeneralTests" />
+        <pattern testClass="dev.cobblesword.tags.IdentifierTests" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.GeneralTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralTests.or3Selector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.GeneralTests" />
+      <option name="METHOD_NAME" value="or3Selector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IdentifierTests.singleSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TagSystem" />
       <extension name="coverage">
@@ -55,76 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TagSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.and3Selector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TagSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
-      <option name="METHOD_NAME" value="and3Selector" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.andSelectorNoMatchFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TagSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
-      <option name="METHOD_NAME" value="andSelectorNoMatchFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.or3Selector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TagSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
-      <option name="METHOD_NAME" value="or3Selector" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GeneralTests and 1 more" />
         <item itemvalue="JUnit.IdentifierTests.singleSelector" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.or3Selector" />
-        <item itemvalue="JUnit.Tests.and3Selector" />
-        <item itemvalue="JUnit.Tests.andSelectorNoMatchFound" />
+        <item itemvalue="JUnit.GeneralTests" />
+        <item itemvalue="JUnit.GeneralTests.or3Selector" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +133,20 @@
       <updated>1643515558203</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/cobblesword/tags/Main.java</url>
+          <line>27</line>
+          <properties class="dev.cobblesword.tags.Main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TagSystem$Tests_or3Selector.ic" NAME="Tests.or3Selector Coverage Results" MODIFIED="1643626196694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

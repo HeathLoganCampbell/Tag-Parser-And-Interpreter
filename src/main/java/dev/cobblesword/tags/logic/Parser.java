@@ -10,34 +10,38 @@ import java.util.Stack;
 
 public class Parser
 {
+    public static String OPEN_BRACKET = "(";
+    public static String CLOSE_BRACKET = ")";
+
+
     public static Stack<String> stringToTreeModel(String selector)
     {
         Stack<String> executionStack = new Stack<>();
         Stack<String> operatorStack = new Stack<>();
 
-        String buffer = "";
+        StringBuilder buffer = new StringBuilder();
         for (int i = 0; i < selector.length(); i++)
         {
             char c = selector.charAt(i);
 
             if( c == '(' )
             {
-                operatorStack.add("(");
+                operatorStack.add(OPEN_BRACKET);
                 continue;
             }
 
             if( c == '&' || c == '|' )
             {
-                executionStack.add(buffer.trim());
-                buffer = "";
+                executionStack.add(buffer.toString().trim());
+                buffer.setLength(0);
             }
 
             if( c == ')')
             {
                 if(buffer.length() > 0)
                 {
-                    executionStack.add(buffer.trim());
-                    buffer = "";
+                    executionStack.add(buffer.toString().trim());
+                    buffer.setLength(0);
                 }
             }
 
@@ -47,7 +51,7 @@ public class Parser
                 {
                     if(operatorStack.isEmpty()) break;
                     String pop = operatorStack.pop();
-                    if (pop != "(")
+                    if (!pop.equals(OPEN_BRACKET))
                     {
                         executionStack.add(pop);
                     }
@@ -61,7 +65,7 @@ public class Parser
                 continue;
             }
 
-            buffer += c;
+            buffer.append(c);
         }
 
 

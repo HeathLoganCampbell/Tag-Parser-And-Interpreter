@@ -8,17 +8,18 @@ import java.util.List;
 
 public class Interpreter
 {
-    public static List<Taggable> extractMatchingTags(Node node, List<Taggable> allAnimals)
+    public static List<Taggable> extractMatchingTags(Node node, List<Taggable> allEntities)
     {
-        List<Taggable> filteredAnimals = new ArrayList<>();
-        for (Taggable taggableEntity : allAnimals)
+        List<Taggable> filteredEntities = new ArrayList<>();
+
+        for (Taggable taggableEntity : allEntities)
         {
             if (node.match(taggableEntity))
             {
-                filteredAnimals.add(taggableEntity);
+                filteredEntities.add(taggableEntity);
             }
         }
 
-        return filteredAnimals;
+        return filteredEntities;
     }
 }

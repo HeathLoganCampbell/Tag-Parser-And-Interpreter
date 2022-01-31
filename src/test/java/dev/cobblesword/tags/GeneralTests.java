@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tests
+public class GeneralTests
 {
     @Test
     public void singleSelectorArg()

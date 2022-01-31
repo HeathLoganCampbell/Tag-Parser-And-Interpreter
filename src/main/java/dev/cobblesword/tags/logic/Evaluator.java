@@ -14,4 +14,15 @@ public class Evaluator
         Node modelNodes = Parser.process(executionStack, executionStack.pop());
         return Interpreter.extractMatchingTags(modelNodes, animals);
     }
+
+    public static Node precompileSelector(String selector)
+    {
+        Stack<String> executionStack = Parser.stringToTreeModel(selector);
+        return Parser.process(executionStack, executionStack.pop());
+    }
+
+    public static List<Taggable> evaluateWithPrecompiledDataStructure(Node modelNodes, List<Taggable> animals)
+    {
+        return Interpreter.extractMatchingTags(modelNodes, animals);
+    }
 }
