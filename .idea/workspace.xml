@@ -38,7 +38,23 @@
       <recent name="dev.cobblesword.tags.node.op" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.or3Selector">
+  <component name="RunManager" selected="JUnit.IdentifierTests.singleSelector">
+    <configuration name="IdentifierTests.singleSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TagSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.cobblesword.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
+      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.IdentifierTests" />
+      <option name="METHOD_NAME" value="singleSelector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TagSystem" />
       <extension name="coverage">
@@ -102,29 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.orSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TagSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.cobblesword.tags.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.cobblesword.tags" />
-      <option name="MAIN_CLASS_NAME" value="dev.cobblesword.tags.Tests" />
-      <option name="METHOD_NAME" value="orSelector" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.or3Selector" />
+        <item itemvalue="JUnit.IdentifierTests.singleSelector" />
         <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.or3Selector" />
         <item itemvalue="JUnit.Tests.and3Selector" />
         <item itemvalue="JUnit.Tests.andSelectorNoMatchFound" />
-        <item itemvalue="JUnit.Tests.orSelector" />
       </list>
     </recent_temporary>
   </component>
@@ -138,5 +138,13 @@
       <updated>1643515558203</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TagSystem$Tests_or3Selector.ic" NAME="Tests.or3Selector Coverage Results" MODIFIED="1643626196694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dev.cobblesword.tags.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TagSystem$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1643626204516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dev.cobblesword.tags.*</FILTER>
+    </SUITE>
   </component>
 </project>
