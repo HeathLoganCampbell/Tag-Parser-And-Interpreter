@@ -57,7 +57,7 @@ public class Main
         long start = System.currentTimeMillis();
         Node node = Evaluator.precompileSelector("(4legs | 2legs)");
         int sum = 1;
-        for(int i = 0 ; i < 1_000_000; i++)
+        for(int i = 0 ; i < 10_000_000; i++)
         {
             List<Taggable> filteredAnimals = Evaluator.evaluateWithPrecompiledDataStructure(node, animals);
             sum += filteredAnimals.size();

@@ -1,8 +1,11 @@
 package dev.cobblesword.tags.logic;
 
+import dev.cobblesword.tags.logic.token.IdentifierToken;
+import dev.cobblesword.tags.logic.token.Token;
 import dev.cobblesword.tags.node.BinaryOp;
 import dev.cobblesword.tags.node.Identifier;
 import dev.cobblesword.tags.node.Node;
+import dev.cobblesword.tags.node.Operator;
 import dev.cobblesword.tags.node.op.AndOp;
 import dev.cobblesword.tags.node.op.OrOp;
 
@@ -14,9 +17,9 @@ public class Parser
     public static String CLOSE_BRACKET = ")";
 
 
-    public static Stack<String> stringToTreeModel(String selector)
+    public static Stack<Token> stringToTreeModel(String selector)
     {
-        Stack<String> executionStack = new Stack<>();
+        Stack<Token> executionStack = new Stack<>();
         Stack<String> operatorStack = new Stack<>();
 
         StringBuilder buffer = new StringBuilder();
@@ -32,7 +35,7 @@ public class Parser
 
             if( c == '&' || c == '|' )
             {
-                executionStack.add(buffer.toString().trim());
+                executionStack.add(new IdentifierToken(buffer.toString().trim()));
                 buffer.setLength(0);
             }
 
@@ -40,7 +43,7 @@ public class Parser
             {
                 if(buffer.length() > 0)
                 {
-                    executionStack.add(buffer.toString().trim());
+                    executionStack.add(new IdentifierToken(buffer.toString().trim()));
                     buffer.setLength(0);
                 }
             }
@@ -53,7 +56,8 @@ public class Parser
                     String pop = operatorStack.pop();
                     if (!pop.equals(OPEN_BRACKET))
                     {
-                        executionStack.add(pop);
+                        if(pop.equals("&")) executionStack.add(new Token(Operator.AND));
+                        if(pop.equals("|")) executionStack.add(new Token(Operator.OR));
                     }
                 }
             }
@@ -72,23 +76,21 @@ public class Parser
         return executionStack;
     }
 
-    public static Node process(Stack<String> executionStack, String currentOp)
+    public static Node process(Stack<Token> executionStack, Token currentOp)
     {
-        Node currentNode = null;
-        if(currentOp.equals("&") || currentOp.equals("|"))
+        BinaryOp currentNode = null;
+        boolean andOpToken = currentOp.getOperator() == Operator.AND;
+        boolean orOpToken = currentOp.getOperator() == Operator.OR;
+        if(andOpToken || orOpToken)
         {
-            if(currentOp.equals("&")) currentNode = new AndOp();
-            if(currentOp.equals("|")) currentNode = new OrOp();
+            if(andOpToken ) currentNode = new AndOp();
+            if(orOpToken) currentNode = new OrOp();
 
-            ((BinaryOp) currentNode).setRight(process(executionStack, executionStack.pop()));
-            ((BinaryOp) currentNode).setLeft(process(executionStack, executionStack.pop()));
+            currentNode.setRight(process(executionStack, executionStack.pop()));
+            currentNode.setLeft(process(executionStack, executionStack.pop()));
             return currentNode;
         }
 
-        if(currentOp.equals("!"))
-        {
-        }
-
-        return new Identifier(currentOp);
+        return new Identifier(((IdentifierToken)currentOp).getIdentifier());
     }
 }
